@@ -1,0 +1,46 @@
+{
+  "summary": {
+    "total_tests": 6,
+    "passed_tests": 5,
+    "success_rate": "83.3%",
+    "timestamp": "2026-01-21T12:10:09.568077"
+  },
+  "test_details": [
+    {
+      "test_name": "Root API Endpoint",
+      "success": true,
+      "details": "Status: 200, Response: {'message': 'Bharatanatyam AI Story Generator API', 'version': '1.0.0'}",
+      "timestamp": "2026-01-21T12:10:09.328202"
+    },
+    {
+      "test_name": "CORS Headers",
+      "success": true,
+      "details": "Status: 405, CORS headers present: False",
+      "timestamp": "2026-01-21T12:10:09.371416"
+    },
+    {
+      "test_name": "Video Upload Validation (Invalid File)",
+      "success": false,
+      "details": "Status: 520, Response: {\"detail\":\"Error processing video: 400: File must be a video\"}",
+      "timestamp": "2026-01-21T12:10:09.409006"
+    },
+    {
+      "test_name": "Story Generation (Invalid ID)",
+      "success": true,
+      "details": "Status: 404, Response: {\"detail\":\"Analysis not found\"}",
+      "timestamp": "2026-01-21T12:10:09.453618"
+    },
+    {
+      "test_name": "Get Analysis (Invalid ID)",
+      "success": true,
+      "details": "Status: 404, Response: {\"detail\":\"Analysis not found\"}",
+      "timestamp": "2026-01-21T12:10:09.492226"
+    },
+    {
+      "test_name": "List Analyses",
+      "success": true,
+      "details": "Status: 200, Found 0 analyses",
+      "timestamp": "2026-01-21T12:10:09.567415"
+    }
+  ]
+}
